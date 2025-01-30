@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+nav {
+    display: flex; 
+    flex-direction: row;
+    width: 100%; 
+    position: fixed;
+    font-size: 250%;
+    height: 300px;
+    padding: 50px 100px; 
+    background-color: rgb(35, 6, 83);
+    z-index: 10;
+    padding-left: 150px;
+    gap: 100px;
+
+}
+nav a{
+    position: relative;
+    padding-top: 70px;
+    font-size: 50px;
+    color: antiquewhite;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+nav a:hover{
+    color:rgb(185, 224, 42);
+    text-decoration: underline;
+}
+
+.nav-container{
+    height: 10px;
+    width: 100vw; 
+    position: absolute;
+    left: 0%;
+    top: 0;
+    display: flex;
+    border-radius: 0px;
+}
+.name{
+
+    color: rgb(244, 255, 86);
+    padding-top: 40px;
+    font-size: 250%;
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container{
+    height: 1550px;
+    width: 100%;
+}
+
+section {
+    
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+img{
+    border: 100% rgb(35, 6, 83);
+    height: auto;
+    border-radius: 50px;
+}
+.home-section{
+
+    right:600px;
+    display:flex;
+    flex-direction: column;
+    flex-shrink: inherit;
+    position: absolute;
+    border-radius: 100px;
+    height:70%;
+    padding: 100px;
+    padding-top: 100px;
+    background-color:  rgb(35, 6, 83) ;
+}
+#home-name{
+    color: rgb(59, 14, 95);
+    padding-top: 40px;
+    font-size: 500%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+#home {  
+    background-image: url(riso_gradient_2.gif);
+}
+
+#about { 
+    background-image: url(bg-2.jpg); 
+    text-align:left;
+}
+#about-title{
+    color: rgb(59, 14, 95);
+    padding-top: 40px;
+    font-size: 500%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 10px;
+}
+#skills { background-color: #9b59b6; }
+#portfolio { background-color: #e67e22; }
+#contact { background-color: #e74c3c; }
+
+
+
+
+
+    
+
+
