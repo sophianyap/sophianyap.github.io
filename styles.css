@@ -254,7 +254,8 @@ section {
     justify-content: center;}
 
 #portfolio { 
-    height: 130vh;
+    padding-bottom: 10%;
+    height: auto;
     justify-content: center;
     background-color: #e67e22;    
     display: flex;
