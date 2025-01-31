@@ -15,8 +15,16 @@ nav {
     z-index: 10;
     height: 50px;
     gap: 30px;
+    box-shadow: 14px 14px 20px rgba(182, 9, 9, 0.4);
+
 }
 
+.nav-container2{
+    
+    background-color: orange;
+    height: 80px;
+    
+}
 
 nav a {
     position: relative;
@@ -40,13 +48,17 @@ nav a:hover {
 
 .name{
     color: rgb(244, 255, 86);
-    padding-top:8px;
-    padding-left: 50px;
-    font-size: 30px;
+    padding-top:10px;
+    padding-left: 20px;
+    font-size: 23px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.portfolio-name{
+    display:flexbox;
+    
 
+}
 .portfolio-world{
     padding-top:0px;
     height: 80%;
@@ -70,6 +82,12 @@ nav a:hover {
     border-radius: 10px;
     width: 270px;
     height: 180px;
+    filter: brightness(50%);
+    transition: 1.0s ease-in-out;
+}
+.card-img:hover{
+    filter: brightness(100%);
+    transition: 1.0s ease-in-out;
 }
 
 
@@ -86,7 +104,7 @@ nav a:hover {
 }
 
 .card {
-    position: relative;
+    
     width: 310px;
     height: 210px;
     background: mediumturquoise;
@@ -98,24 +116,32 @@ nav a:hover {
     font-weight: bold;
     border-radius: 20px;
     cursor: pointer;
-    
     overflow: hidden;
+    box-shadow: 14px 12px 20px rgba(243, 236, 170, 0.3);
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .card:hover {
+    filter: brightness(100%);
+    background: rgb(32, 90, 88);
     width: 310px;
-    height: 400px;
-    transition: all 0.3s;
+    height: 450px;
+    transition: all 1.0s ease-in-out;
 }
 
 .card:hover::after {
     opacity: 1;
 }
 
-
-#icon{
-    width:70px;
-    height:70px;
+.icon:hover{
+    filter: brightness(100%);
+    transition: 0.7s ease-in-out;
+}
+.icon{
+    transition: 1.0s ease-in-out;
+    filter: brightness(70%);
+    width:50px;
+    height:50px;
 }
 
 .contact-text{
@@ -132,7 +158,7 @@ nav a:hover {
 }
 .contact-area{
     width: 50%;
-    height: 20%;
+    height: 50%;
 }
     
 img{
@@ -150,6 +176,9 @@ img{
     border-radius: 70px;
     height:70%;
     padding: 30px;
+    box-shadow: 14px 14px 20px rgba(255, 7, 7, 0.4);
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+
     background-color:  rgb(35, 6, 83) ;
 }
 #img-face{
@@ -165,7 +194,7 @@ img{
     justify-content: center;
     color: rgb(59, 14, 95);
     padding-top: 40px;
-    font-size: 100px;
+    font-size: 10vw;
 }
 #home { 
     justify-content: center; 
@@ -189,19 +218,17 @@ img{
     filter: brightness(50%);
     width: 270px;
     height: 200px;
-    
     border-radius: 10px;
-    transition: transform 0.3s ease;
+    transition: all 1.5s ease-in-out;
 }
 
-.img-skill:hover{
-    transition: transform 0.3s;
+.img-skill:hover {
     filter: brightness(100%);
-    width:300px;
-    height:230px;
-    
-}
 
+    transform: scale(1.1);
+    transition: all 1.0s ease-in-out;
+
+}
 .skill-section{
     padding-top: 100px;
     gap: 100px;
@@ -239,7 +266,6 @@ section {
     
     justify-content: center;
     background-image: url(bg-5.jpg);  }
-
 
 
 
