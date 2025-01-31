@@ -4,29 +4,24 @@
     scroll-behavior: smooth;
 }
 
-nav {
 
+nav {
     display: flex; 
     flex-direction: row;
     width: 100%; 
     position: fixed;
-    font-size: 300%;
-    height: 250px;
-    padding: 20px 50px;
+    height: 120px;
     background-color: rgb(35, 6, 83);
     z-index: 10;
-    gap: 60px;
-}
-
-.nav-container {
-    height: auto;
+    height: 50px;
+    gap: 30px;
 }
 
 
 nav a {
     position: relative;
-    padding-top: 70px;
-    font-size: 60px;
+    padding-top: 15px;
+    font-size: 15px;
     color: antiquewhite;
     text-decoration: none;
     font-family: 'Arial', sans-serif;
@@ -45,54 +40,38 @@ nav a:hover {
 
 .name{
     color: rgb(244, 255, 86);
-    padding-top: 49px;
-    padding-left: 70px;
-    font-size: 100px;
+    padding-top:8px;
+    padding-left: 50px;
+    font-size: 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-section {
-    height: 100vh;
-    display: flex;
-    
-    align-items: center;
-    font-size: 30px;
-    font-family: Arial, sans-serif;
-    color: white;
-}
 
+.portfolio-world{
+    padding-top:0px;
+    height: 80%;
+    justify-content: center;
+    width: 50%;
+}
 .card-container {
     display: flex;
     justify-content: flex-start;
-    gap: 20px;
+    gap:10px;
     padding-left: 20px;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
+}
+
+.card-name{
+    font-size: 20px;
+    
 }
 
 .card-img{
-
-    height: 450px;
-   
-
-
+    border-radius: 10px;
+    width: 270px;
+    height: 180px;
 }
 
-.card {
-    position: relative;
-    width: 800px;
-    height: 500px;
-    background: mediumturquoise;
-    padding: 20px;
-    padding-bottom: 100px;
-    align-items: center;
-    justify-content: center;
-    font-size: 50px;
-    font-weight: bold;
-    border-radius: 20px;
-    cursor: pointer;
-    gap: 100px;
-    overflow: hidden;
-}
 
 .card::after {
     content: attr(data-text);
@@ -106,9 +85,26 @@ section {
     transition: opacity 0.3s ease;
 }
 
+.card {
+    position: relative;
+    width: 310px;
+    height: 210px;
+    background: mediumturquoise;
+    padding: 20px;
+    padding-bottom: 100px;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    
+    overflow: hidden;
+}
+
 .card:hover {
-    width: 800px;
-    height: 1200px;
+    width: 310px;
+    height: 400px;
     transition: all 0.3s;
 }
 
@@ -118,15 +114,26 @@ section {
 
 
 #icon{
-    width:200px;
-    height:200px;
+    width:70px;
+    height:70px;
 }
 
-#contact-text{
-    font-size: 60px;
-    color:black
-}
+.contact-text{
+    
+    font-size: 40px;
+    color:black;
+    text-decoration: none;
 
+}
+.contact-text:hover{
+    font-size: 40px;
+    text-decoration: underline;
+
+}
+.contact-area{
+    width: 50%;
+    height: 20%;
+}
     
 img{
     
@@ -135,15 +142,14 @@ img{
 }
 .home-section{
 
-    left:600px;
+    right: 200px;
     display:flex;
     flex-direction: column;
     flex-shrink: inherit;
     position: absolute;
-    border-radius: 100px;
+    border-radius: 70px;
     height:70%;
-    padding: 100px;
-    padding-top: 100px;
+    padding: 30px;
     background-color:  rgb(35, 6, 83) ;
 }
 #img-face{
@@ -152,14 +158,14 @@ img{
 
 
 .about-me{
-    
-    padding-right: 900px;
+    padding-right: 700px;
 }
 #home-name{
+  
+    justify-content: center;
     color: rgb(59, 14, 95);
     padding-top: 40px;
-    font-size: 500%;
-
+    font-size: 100px;
 }
 #home { 
     justify-content: center; 
@@ -169,39 +175,48 @@ img{
 #about{ 
     justify-content:right;
     background-image: url(bg-2.jpg); 
-    text-align:right;
-    right: 700px;
+    
+    
 }
 #about-title{
     color: rgb(59, 14, 95);
     padding-top: 40px;
-    font-size: 500%;
+    font-size: 50%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
 }
 .img-skill {
     filter: brightness(50%);
-    width: 800px;
-    height: 650px;
+    width: 270px;
+    height: 200px;
+    
+    border-radius: 10px;
     transition: transform 0.3s ease;
 }
 
 .img-skill:hover{
     transition: transform 0.3s;
     filter: brightness(100%);
-    width:1000px;
-    height:850px;
+    width:300px;
+    height:230px;
     
 }
 
-
 .skill-section{
-    
-    gap: 70px;
+    padding-top: 100px;
+    gap: 100px;
     display: flex;
     flex-direction: row;
 }
 
+section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+    color: white;
+}
 
 #skills { 
     background-image: url(c/skills-2.png);
@@ -212,6 +227,7 @@ img{
     justify-content: center;}
 
 #portfolio { 
+    height: 130vh;
     justify-content: center;
     background-color: #e67e22;    
     display: flex;
@@ -223,5 +239,8 @@ img{
     
     justify-content: center;
     background-image: url(bg-5.jpg);  }
+
+
+
 
 
