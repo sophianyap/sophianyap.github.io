@@ -11,7 +11,7 @@ nav {
     width: 100%; 
     position: fixed;
     font-size: 300%;
-    height: 150px;
+    height: 250px;
     padding: 20px 50px;
     background-color: rgb(35, 6, 83);
     z-index: 10;
@@ -20,17 +20,11 @@ nav {
 
 nav a {
     position: relative;
-    padding-top: 33px;
-    font-size: 40px;
+    padding-top: 70px;
+    font-size: 60px;
     color: antiquewhite;
     text-decoration: none;
     font-family: 'Arial', sans-serif;
-}
-
-.nav-container{
-    height: 10px;
-    width: 100vw; 
-    position: absolute;
 }
 
 nav a:hover {
@@ -46,8 +40,9 @@ nav a:hover {
 
 .name{
     color: rgb(244, 255, 86);
-    padding-top: 29px;
-    font-size: 100%;
+    padding-top: 49px;
+    padding-left: 70px;
+    font-size: 100px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -170,7 +165,7 @@ img{
     justify-content:right;
     background-image: url(bg-2.jpg); 
     text-align:right;
-    right: 600px;
+    right: 700px;
 }
 #about-title{
     color: rgb(59, 14, 95);
