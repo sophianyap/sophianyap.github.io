@@ -18,6 +18,11 @@ nav {
     gap: 60px;
 }
 
+.nav-container {
+    height: auto;
+}
+
+
 nav a {
     position: relative;
     padding-top: 70px;
@@ -174,29 +179,38 @@ img{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
 }
-.img-skill{
+.img-skill {
     filter: brightness(50%);
-    width:900px;
-    height:750px;
-    
+    width: 800px;
+    height: 650px;
+    transition: transform 0.3s ease;
 }
+
 .img-skill:hover{
+    transition: transform 0.3s;
     filter: brightness(100%);
     width:1000px;
     height:850px;
-    transition: all 0.3s;
+    
 }
 
 
 .skill-section{
+    
     gap: 70px;
     display: flex;
     flex-direction: row;
 }
 
 
-#skills { background-image: url(c/skills-2.png); 
+#skills { 
+    background-image: url(c/skills-2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fabsolute; 
     justify-content: center;}
+
 #portfolio { 
     justify-content: center;
     background-color: #e67e22;    
