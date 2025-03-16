@@ -1,35 +1,30 @@
-* {    margin: 0;
+* {    
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-
 
 nav {
     display: flex; 
     flex-direction: row;
     width: 100%; 
     position: fixed;
-    height: 120px;
+    height: 10px;
     background-color: rgb(35, 6, 83);
     z-index: 10;
     height: 50px;
     gap: 30px;
     box-shadow: 14px 14px 20px rgba(182, 9, 9, 0.4);
-
 }
-
 .nav-container2{
-    
     background-color: orange;
     height: 80px;
-    
 }
-
 nav a {
     position: relative;
     padding-top: 15px;
-    font-size: 15px;
+    font-size: 90%;
     color: antiquewhite;
     text-decoration: none;
     font-family: 'Arial', sans-serif;
@@ -39,14 +34,20 @@ nav a:hover {
     color: rgb(185, 224, 42);
     text-decoration: underline;
 }
-
-.container {
-    height: auto;
-    width: 100%;
-    padding-top: 120px;
+ @keyframes typing {
+    0% {width: 0%;}
+    50% { width: 100%;}
+    100% {width: 0%;}
+ }
+#open-link{
+    font-size: 20px;
+    color: white;
 }
-
+#open-link:hover{
+    color: rgb(250, 196, 196);
+}
 .name{
+    
     color: rgb(244, 255, 86);
     padding-top:10px;
     padding-left: 20px;
@@ -74,6 +75,7 @@ nav a:hover {
 }
 
 .card-name{
+    
     font-size: 20px;
     
 }
@@ -104,7 +106,6 @@ nav a:hover {
 }
 
 .card {
-    
     width: 310px;
     height: 210px;
     background: mediumturquoise;
@@ -116,6 +117,7 @@ nav a:hover {
     font-weight: bold;
     border-radius: 20px;
     cursor: pointer;
+    transition: 1.0s;
     overflow: hidden;
     box-shadow: 14px 12px 20px rgba(243, 236, 170, 0.3);
     transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
@@ -126,11 +128,13 @@ nav a:hover {
     background: rgb(32, 90, 88);
     width: 310px;
     height: 450px;
-    transition: all 1.0s ease-in-out;
+    transition: 1.0s ease-in-out;
+
 }
 
 .card:hover::after {
     opacity: 1;
+    
 }
 
 .icon:hover{
@@ -161,34 +165,26 @@ nav a:hover {
     height: 50%;
 }
     
-img{
-    
-    height: auto;
-    border-radius: 50px;
-}
-.home-section{
 
-    right: 200px;
-    display:flex;
-    flex-direction: column;
-    flex-shrink: inherit;
-    position: absolute;
-    border-radius: 70px;
-    height:70%;
-    padding: 30px;
-    box-shadow: 14px 14px 20px rgba(255, 7, 7, 0.4);
-    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
 
-    background-color:  rgb(35, 6, 83) ;
+#words{
+    font-size: 10%;
 }
+
+
+.my-face{
+    width: 50%;
+    height: 10%;
+}
+
 #img-face{
-    height:100%;
+    width: 60%;
+    border-radius: 10px;
+    border: solid 10px rgb(59, 14, 95);
+    
 }
 
 
-.about-me{
-    padding-right: 700px;
-}
 #home-name{
   
     justify-content: center;
@@ -197,16 +193,31 @@ img{
     font-size: 10vw;
 }
 #home { 
-    justify-content: center; 
+    justify-content: center;
     background-image: url(riso_gradient_2.gif);
 }
 
 #about{ 
-    justify-content:right;
     background-image: url(bg-2.jpg); 
-    
+    width: 100%;
     
 }
+.about-me-area{
+    margin-left:10%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.about-me{
+    width: 50%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
 #about-title{
     color: rgb(59, 14, 95);
     padding-top: 40px;
@@ -230,6 +241,7 @@ img{
 
 }
 .skill-section{
+    
     padding-top: 100px;
     gap: 100px;
     display: flex;
@@ -237,6 +249,8 @@ img{
 }
 
 section {
+    
+    width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
